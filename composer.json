@@ -1,6 +1,7 @@
 {
     "name": "umituz/great-package",
     "description": "All great packages",
+    "license": "MIT",
     "require": {
         "elasticsearch/elasticsearch": "^8.6"
     },
