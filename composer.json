@@ -3,7 +3,7 @@
     "description": "All great packages",
     "license": "MIT",
     "require": {
-        "elasticsearch/elasticsearch": "^8.6"
+        "predis/predis": "^2.1"
     },
     "config": {
         "allow-plugins": {
