@@ -1,7 +1,20 @@
 {
     "name": "umituz/great-package",
     "description": "All great packages",
+    "keywords": [
+        "umituz",
+        "great package"
+    ],
+    "homepage": "https://github.com/umituz/great-package",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Ümit UZ",
+            "email": "info@umituz.com",
+            "homepage": "https://umituz.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "predis/predis": "^2.1"
     },
@@ -9,5 +22,18 @@
         "allow-plugins": {
             "php-http/discovery": true
         }
+    },
+    "autoload": {
+        "psr-4": {
+            "GreatPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GreatPackage\\Providers\\GreatPackageServiceProvider"
+            ]
+        },
+        "aliases": {}
     }
 }
