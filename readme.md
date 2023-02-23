@@ -10,3 +10,5 @@ Installation
 =============
 
 $ composer require umituz/great-package
+
+php artisan vendor:publish --provider="GreatPackage\Providers\GreatPackageServiceProvider"
