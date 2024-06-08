@@ -1,11 +1,11 @@
 {
-    "name": "umituz/great-package",
-    "description": "All great packages",
+    "name": "umituz/eeve",
+    "description": "Eeve, flexible micro service management",
     "keywords": [
         "umituz",
-        "great package"
+        "eeve"
     ],
-    "homepage": "https://github.com/umituz/great-package",
+    "homepage": "https://github.com/umituz/eeve",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,6 @@
         }
     ],
     "require": {
-        "predis/predis": "^2.1"
     },
     "config": {
         "allow-plugins": {
@@ -25,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "GreatPackage\\": "src/"
+            "Eeve\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "GreatPackage\\Providers\\GreatPackageServiceProvider"
+                "Eeve\\Providers\\EeveServiceProvider"
             ]
         },
         "aliases": {}

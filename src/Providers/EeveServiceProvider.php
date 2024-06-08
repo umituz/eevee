@@ -1,10 +1,10 @@
 <?php
 
-namespace GreatPackage\Providers;
+namespace Eeve\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class GreatPackageServiceProvider extends ServiceProvider
+class EeveServiceProvider extends ServiceProvider
 {
     /**
      * Boot
@@ -32,7 +32,7 @@ class GreatPackageServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('great-package');
+        return array('eeve');
     }
 
     /**
@@ -41,7 +41,7 @@ class GreatPackageServiceProvider extends ServiceProvider
     protected function registerPublishing()
     {
         $this->publishes([
-            __DIR__ . '/../../config/great-package.php' => config_path('great-package.php')
-        ], 'great-package-config');
+            __DIR__ . '/../../config/eeve.php' => config_path('eeve.php')
+        ], 'eeve-config');
     }
 }

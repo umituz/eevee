@@ -1,12 +1,12 @@
 <?php
 
-namespace GreatPackage\Libraries;
+namespace Eeve\Libraries;
 
 use Illuminate\Support\Facades\Redis;
 
 /**
  * Class RedisManagement
- * @package GreatPackage\Libraries
+ * @package Eeve\Libraries
  */
 class RedisManagement
 {
