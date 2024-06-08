@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  eevee:
+    container_name: 'eevee'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - shared_vendor:/var/www/vendor
+    networks:
+      - snorlax
+
+networks:
+  snorlax:
+    external:
+      name: snorlax_snorlax
+
+volumes:
+  shared_vendor:
