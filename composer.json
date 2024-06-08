@@ -1,7 +1,7 @@
 {
     "name": "umituz/eeve",
     "description": "Eeve, flexible micro service management",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "keywords": [
         "umituz",
         "eeve"
@@ -44,7 +44,8 @@
                 "Spatie\\MediaLibrary\\MediaLibraryServiceProvider",
                 "Spatie\\Translatable\\TranslatableServiceProvider",
                 "Intervention\\Image\\ImageServiceProvider",
-                "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider"
+                "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider",
+                "Orangehill\\Iseed\\IseedServiceProvider"
             ]
         },
         "aliases": {
