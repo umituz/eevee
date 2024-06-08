@@ -1,10 +1,10 @@
 <?php
 
-namespace Eeve\Providers;
+namespace Eevee\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class EeveServiceProvider extends ServiceProvider
+class EeveeServiceProvider extends ServiceProvider
 {
     /**
      * Boot
@@ -32,7 +32,7 @@ class EeveServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('eeve');
+        return array('eevee');
     }
 
     /**
@@ -41,7 +41,7 @@ class EeveServiceProvider extends ServiceProvider
     protected function registerPublishing()
     {
         $this->publishes([
-            __DIR__ . '/../../config/eeve.php' => config_path('eeve.php')
-        ], 'eeve-config');
+            __DIR__ . '/../../config/eevee.php' => config_path('eevee.php')
+        ], 'eevee-config');
     }
 }

@@ -1,12 +1,12 @@
 {
-    "name": "umituz/eeve",
-    "description": "Eeve, flexible micro service management",
-    "version": "1.0.16",
+    "name": "umituz/eevee",
+    "description": "Eevee, flexible micro service management",
+    "version": "1.0.17",
     "keywords": [
         "umituz",
-        "eeve"
+        "eevee"
     ],
-    "homepage": "https://github.com/umituz/eeve",
+    "homepage": "https://github.com/umituz/eevee",
     "license": "MIT",
     "authors": [
         {
@@ -45,13 +45,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Eeve\\": "src/"
+            "Eevee\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Eeve\\Providers\\EeveServiceProvider",
+                "Eevee\\Providers\\EeveeServiceProvider",
                 "Spatie\\Permission\\PermissionServiceProvider",
                 "Spatie\\MediaLibrary\\MediaLibraryServiceProvider",
                 "Spatie\\Translatable\\TranslatableServiceProvider",
