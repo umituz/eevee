@@ -44,8 +44,7 @@
                 "Spatie\\MediaLibrary\\MediaLibraryServiceProvider",
                 "Spatie\\Translatable\\TranslatableServiceProvider",
                 "Intervention\\Image\\ImageServiceProvider",
-                "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider",
-                "Orangehill\\Iseed\\IseedServiceProvider"
+                "Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider"
             ]
         },
         "aliases": {
