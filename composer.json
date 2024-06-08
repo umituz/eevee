@@ -17,6 +17,7 @@
         }
     ],
     "require": {
+        "spatie/laravel-permission": "^6.7"
     },
     "config": {
         "allow-plugins": {
@@ -31,7 +32,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Eeve\\Providers\\EeveServiceProvider"
+                "Eeve\\Providers\\EeveServiceProvider",
+                "Spatie\\Permission\\PermissionServiceProvider"
             ]
         },
         "aliases": {}
