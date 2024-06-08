@@ -1,7 +1,7 @@
 {
     "name": "umituz/eeve",
     "description": "Eeve, flexible micro service management",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "umituz",
         "eeve"
@@ -17,7 +17,8 @@
         }
     ],
     "require": {
-        "spatie/laravel-permission": "^6.7"
+        "spatie/laravel-permission": "^6.7",
+        "spatie/laravel-medialibrary": "^11.4",
     },
     "config": {
         "allow-plugins": {
@@ -33,7 +34,8 @@
         "laravel": {
             "providers": [
                 "Eeve\\Providers\\EeveServiceProvider",
-                "Spatie\\Permission\\PermissionServiceProvider"
+                "Spatie\\Permission\\PermissionServiceProvider",
+                "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
             ]
         },
         "aliases": {}
