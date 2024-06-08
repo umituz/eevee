@@ -20,3 +20,4 @@ networks:
 
 volumes:
   shared_vendor:
+    external: true

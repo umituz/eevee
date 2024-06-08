@@ -3,7 +3,7 @@
 FROM php:8.3-cli
 
 # Set working directory
-WORKDIR /var/www/eevee
+WORKDIR /var/www/html
 
 # Install necessary system packages and PHP extensions
 RUN apt-get update && apt-get install -y \
@@ -34,4 +34,4 @@ RUN composer install
 EXPOSE 80
 
 # Start the application (bu komutu ihtiyacınıza göre güncelleyin)
-CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/eevee"]
+CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/html"]
