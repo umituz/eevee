@@ -9,7 +9,7 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - shared_vendor:/var/www/vendor
+      - shared_vendor:/var/www/html/vendor
     networks:
       - snorlax
 
