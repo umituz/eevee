@@ -1,6 +1,7 @@
 {
     "name": "umituz/eeve",
     "description": "Eeve, flexible micro service management",
+    "version": "1.0.3",
     "keywords": [
         "umituz",
         "eeve"
