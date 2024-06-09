@@ -1,11 +1,10 @@
-# Eevee Dockerfile
-
+# Temel imaj olarak PHP 8.3 CLI kullanıyoruz
 FROM php:8.3-cli
 
-# Set working directory
+# Çalışma dizinini ayarla
 WORKDIR /var/www/html
 
-# Install necessary system packages and PHP extensions
+# Gerekli PHP uzantılarını yükle
 RUN apt-get update && apt-get install -y \
     libpng-dev \
     libjpeg-dev \
@@ -16,22 +15,23 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
+    libpq-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install gd \
     && docker-php-ext-install exif \
-    && docker-php-ext-install pdo pdo_mysql zip
+    && docker-php-ext-install pdo pdo_pgsql zip
 
-# Install composer
+# Composer kurulumunu yap
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Copy the existing application directory contents
+# Mevcut uygulama dosyalarını kopyala
 COPY . .
 
-# Install composer dependencies
-RUN composer install
+# Composer bağımlılıklarını yükle (sadece production bağımlılıkları)
+RUN composer install --no-dev --optimize-autoloader --no-scripts --no-progress --no-interaction
 
-# Expose port 80
-EXPOSE 80
+# Gerekli veriyi volumes ile paylaşmak için
+VOLUME /var/www/html/vendor
 
-# Start the application (bu komutu ihtiyacınıza göre güncelleyin)
+# Varsayılan komut
 CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/html"]
